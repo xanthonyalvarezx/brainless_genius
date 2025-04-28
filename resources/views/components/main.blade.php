@@ -9,6 +9,7 @@
     @vite(['resources/css/app.css'])
     @stack('styles')
 </head>
+{{-- header start --}}
 <header>
     <div class="d-flex justify-content-center">
         <div class="container d-flex banner-top w-75 mt-4">
@@ -18,6 +19,7 @@
                         width="275px">
                 </span>
             </div>
+            {{-- nav starts --}}
             <nav class="container d-flex align-items-center nav-bar ">
                 <ul class="d-flex nav-list justify-content-between  w-100 px-3">
                     <li class="nav-item">
@@ -31,6 +33,7 @@
                     </li>
                 </ul>
             </nav>
+            {{-- nav stops --}}
         </div>
     </div>
 
