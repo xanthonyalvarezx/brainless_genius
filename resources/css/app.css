@@ -1,8 +1,3 @@
-body {
-    height: 100vh;
-    width: 100vw;
-}
-
 button {
     border-radius: 8px;
     border: none;
@@ -10,17 +5,16 @@ button {
     background-color: royalblue;
 }
 
-.footer-div {
-    margin-top: 200px;
-    margin-bottom: 25px;
-}
 .nav-list {
     list-style-type: none;
     .nav-item {
         font-weight: 600;
-        color: #000000;
-        :hover {
-            text-decoration: underline;
+        a {
+            color: #ffffff;
         }
     }
+}
+
+.active {
+    color: blueviolet;
 }
