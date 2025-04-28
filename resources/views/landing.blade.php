@@ -32,13 +32,15 @@
             </div>
             <div class=" center-content-right w-50">
                 <div class="d-lg-flex">
-                    <div class="card d-flex flex-column align-items-center service-card mx-2 mt-3 text-center ">
+                    <div
+                        class="card shadow-lg d-flex flex-column align-items-center service-card mx-2 mt-3 text-center ">
                         <img class="w-50 my-3" src={{ asset('images/iconmonstr-browser-lined.svg') }} alt="">
                         <div class="container">
                             <h4>Full Customization</h4>
                         </div>
                     </div>
-                    <div class="card d-flex flex-column align-items-center service-card mx-2 my-3 text-center">
+                    <div
+                        class="card shadow-lg d-flex flex-column align-items-center service-card mx-2 my-3 text-center">
                         <img class="my-3 w-50" src={{ asset('images/iconmonstr-smartphone-16.svg') }} alt="">
                         <div class="container">
                             <h4>Responsive Design</h4>
@@ -46,13 +48,15 @@
                     </div>
                 </div>
                 <div class="d-lg-flex">
-                    <div class="card d-flex flex-column align-items-center service-card mx-2 mt-3 text-center ">
+                    <div
+                        class="card shadow-lg d-flex flex-column align-items-center service-card mx-2 mt-3 text-center ">
                         <img class="w-50 my-3 " src={{ asset('images/iconmonstr-browser-lined.svg') }} alt="">
                         <div class="container">
                             <h4>Long Term Maintenence</h4>
                         </div>
                     </div>
-                    <div class="card d-flex flex-column align-items-center service-card mx-2 my-3 text-center">
+                    <div
+                        class="card shadow-lg d-flex flex-column align-items-center service-card mx-2 my-3 text-center">
                         <img class="w-50 my-3 " src={{ asset('images/iconmonstr-magnifier-lined.svg') }} alt="">
                         <div class="container">
                             <h4>Enhanced SEO</h4>
