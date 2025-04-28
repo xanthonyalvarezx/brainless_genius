@@ -1,0 +1,41 @@
+.main-container {
+    height: 90vh;
+}
+
+.banner-top {
+    height: 30vh;
+    background: #2a5b9b;
+    background: linear-gradient(
+        90deg,
+        rgba(42, 91, 155, 1) 0%,
+        rgba(87, 122, 199, 1) 75%,
+        rgba(110, 117, 211, 1) 83%,
+        rgba(165, 83, 237, 1) 100%
+    );
+    border-radius: 10px;
+
+    .banner-button {
+    }
+}
+
+.center-content {
+    height: 30vh;
+
+    .left-text {
+        width: 25vw;
+    }
+
+    .service-card {
+        background: #2a5b9b;
+        background: linear-gradient(
+            90deg,
+            rgba(42, 91, 155, 1) 0%,
+            rgba(87, 122, 199, 1) 75%,
+            rgba(110, 117, 211, 1) 83%,
+            rgba(165, 83, 237, 1) 100%
+        );
+        width: 15vw;
+        height: 30vh;
+        color: white;
+    }
+}
