@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('messages', function(Blueprint $table){
+        Schema::create('messages', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('email');
             $table->longtext('message');
-
+            $table->date('created_at')->nullable();
+            $table->date('updated_at')->nullable();
         });
     }
 
