@@ -7,9 +7,11 @@ using npm to build / cache the styles in app.css, and any javascript needed.
 "Livewire" to submit forms and also do most of the functionality that JavaScript would do using "Alpine"
 
 Example of alpine looks like x-onclick="somefunction"
-
-to start the laravel server -> php artisan serve
-to start the node server -> npm run dev
-to build the css -> npm run build
+<ul>
+    <li>to start the laravel server -> php artisan serve<li>
+    <li>to start the node server -> npm run dev<li>
+    <li>to build the css -> npm run build<li>
+  
+</ul>
 
 
