@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
@@ -12,39 +9,49 @@
     @vite(['resources/css/app.css'])
     @stack('styles')
 </head>
-
-<body>
-    <nav class="container nav-bar">
-        <ul class="d-flex nav-list justify-content-between">
-            <li class="nav-item text-dark">
-                <a href="/">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a href="/about">ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a href="/contact">CONTACT</a>
-            </li>
-
-        </ul>
-    </nav>
-    @if (session()->has('success'))
-        <div class="container container--narrow">
-            <div class="alert alert-success text-center">
-                {{ session('success') }}
+<header>
+    <div class="d-flex justify-content-center">
+        <div class="container d-flex banner-top w-75 mt-4">
+            <div class="d-flex flex-column justify-content-center align-items-center w-25">
+                <span class="mt-3 text-white fw-2 text-center">Brainless Genius
+                    <img src="{{ asset('images/brainless_logo-removebg-preview (1).png') }}" alt=""
+                        width="275px">
+                </span>
             </div>
+            <nav class="container d-flex align-items-center nav-bar ">
+                <ul class="d-flex nav-list justify-content-between  w-100 px-3">
+                    <li class="nav-item">
+                        <a class="active" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    @elseif(session()->has('error'))
-        <div class="container container--narrow">
-            <div class="alert alert-danger text-center">
-                {{ session('error') }}
-            </div>
+    </div>
+
+</header>
+{{-- HEADER END --}}
+@if (session()->has('success'))
+    <div class="container container--narrow">
+        <div class="alert alert-success text-center">{{-- Success Alert from server --}}
+            {{ session('success') }}
         </div>
-    @endif
-    {{ $slot }}
-</body>
-<footer class="footer-div text-center">
-    © 2025 Brainless Genius. Made with 💡 and ☕.
+    </div>
+@elseif(session()->has('error'))
+    <div class="container container--narrow">
+        <div class="alert alert-danger text-center">{{-- Error Alert from server --}}
+            {{ session('error') }}
+        </div>
+    </div>
+@endif
+{{ $slot }}
+{{-- footer start --}}
+
+<footer class="text-center m-0 my-3">
+    <p> © 2025 Brainless Genius. Made with 💡 and ☕.</p>
 </footer>
-
-</html>

@@ -1,5 +1,5 @@
 .main-container {
-    height: 90vh;
+    height: 100vh;
 }
 
 .banner-top {
@@ -19,8 +19,6 @@
 }
 
 .center-content {
-    height: 30vh;
-
     .left-text {
         width: 25vw;
     }
