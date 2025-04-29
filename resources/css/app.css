@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.logo-image {
+    width: 20vw;
+}
+
 button {
     border-radius: 8px;
     border: none;
@@ -9,8 +17,13 @@ button {
     list-style-type: none;
     .nav-item {
         font-weight: 600;
+
         a {
             color: #ffffff;
+            font-size: 1.5vw;
+        }
+        :hover {
+            text-decoration: underline;
         }
     }
 }
