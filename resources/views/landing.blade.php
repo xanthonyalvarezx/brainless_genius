@@ -3,7 +3,6 @@
         <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
     @endpush
     <div class=" container  main-container d-flex flex-column align-items-center ">
-
         <div class="center-content d-flex w-100 justify-content-between mt-5">
             <div class="d-flex flex-column center-content-left mr-5">
                 <div class="left-text">
