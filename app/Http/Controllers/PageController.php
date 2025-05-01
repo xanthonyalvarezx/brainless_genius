@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Message;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 
@@ -38,6 +39,12 @@ class PageController extends Controller
     }
     public function loginPage(){
         return view('login');
+
+    }
+    public function adminDash(){
+
+        $newMessages = Message::all();
+        return view('dashboard', ['messages' => $newMessages]);
 
     }
 

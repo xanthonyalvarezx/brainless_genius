@@ -19,9 +19,9 @@ class AuthController extends Controller
         if (auth()->attempt(['email' => $loginData['email'], 'password' => $loginData['password']])) {
             $request->session()->regenerate();
             // event(new exampleEvent(['username' => auth()->user()->username, 'action' => 'login']));
-            return redirect('/')->with('success', auth()->user()->name . " you've successfully logged in");
+            return redirect('/dashboard')->with('success', auth()->user()->name . " you've successfully logged in");
         } else {
-            return redirect('/')->with('error', 'Invalid credentials');
+            return redirect('/login')->with('error', 'Invalid credentials');
         }
 
         
@@ -40,6 +40,11 @@ class AuthController extends Controller
 
 
 
+    }
+
+    public function logout(){
+         auth()->logout();
+        return redirect('/login')->with('success', 'You are now logged out');
     }
    
     
