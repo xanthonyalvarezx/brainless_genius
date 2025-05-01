@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Message extends Model
 {
     use HasFactory;
-
+// Table columns 
     protected $fillable = ['name', 'email', 'message'];
 }
