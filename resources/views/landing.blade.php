@@ -2,21 +2,27 @@
     @push('styles')
         <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
     @endpush
-    <div class=" container container--narrow main-container d-flex flex-column align-items-center ">
-
+    <div class=" container  main-container d-flex flex-column align-items-center ">
         <div class="center-content d-flex w-100 justify-content-between mt-5">
             <div class="d-flex flex-column center-content-left mr-5">
                 <div class="left-text">
                     <h5><a href="about">ABOUT US</a></h5>
-                    We're a team of experienced web developers dedicated to creating high-quality websites that meet
-                    your business needs
+                    We are a small team of dedicated web developers specializing in the LAMP stack, committed to
+                    building powerful, scalable
+                    web applications that exceed our clients' expectations. With a strong focus on CRMs, CMS platforms,
+                    e-commerce
+                    solutions, RBAC (Role-Based Access Control) systems, and custom administrative tools, we bring both
+                    technical expertise
+                    and a passion for problem-solving to every project. Our goal is to create intuitive, reliable, and
+                    future-ready products
+                    tailored to meet—and surpass—customer needs.
                 </div>
                 <div class=" mx-5">
                     <hr>
                 </div>
                 <div class="left-text">
                     <h5><a href="contact">CONTACT US</a></h5>
-                    Get in touch with us for your web development needs
+                    Get in touch with us for your web development and needs
                 </div>
                 <div class=" mx-5">
                     <hr>

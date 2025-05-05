@@ -1,6 +1,8 @@
-<x-main title="about">
-    @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
+{{-- adds dynamic title to the main layout --}}
+<x-main title="about"> 
+    {{-- Pushes custom styles to the main layout -> needs its own css  --}}
+    @push('styles') 
+        <link rel="stylesheet" href="{{ asset('css/landing.css') }}"> 
     @endpush
     <div class=" container main-container d-flex flex-column align-items-center ">
         <div class="d-lg-flex justify-content-between rounded-lg shadow-lg mt-5 w-100">
