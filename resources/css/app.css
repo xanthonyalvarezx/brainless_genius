@@ -1,11 +1,21 @@
 * {
     box-sizing: border-box;
 }
-
-.logo-image {
-    width: 20vw;
+html {
+    height: fit-content;
 }
-
+.banner-top {
+    width: 100%;
+    height: fit-content;
+    background: #2a5b9b;
+    background: linear-gradient(
+        90deg,
+        rgba(42, 91, 155, 1) 0%,
+        rgba(87, 122, 199, 1) 75%,
+        rgba(110, 117, 211, 1) 83%,
+        rgba(165, 83, 237, 1) 100%
+    );
+}
 button {
     border-radius: 8px;
     border: none;
@@ -20,7 +30,6 @@ button {
 
         a {
             color: #ffffff;
-            font-size: 1.5vw;
         }
         :hover {
             text-decoration: underline;

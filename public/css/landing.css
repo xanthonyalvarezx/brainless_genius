@@ -1,21 +1,13 @@
+html {
+    height: fit-content;
+}
+
 .main-container {
     height: 100vh;
 }
 
-.banner-top {
-    height: 30vh;
-    background: #2a5b9b;
-    background: linear-gradient(
-        90deg,
-        rgba(42, 91, 155, 1) 0%,
-        rgba(87, 122, 199, 1) 75%,
-        rgba(110, 117, 211, 1) 83%,
-        rgba(165, 83, 237, 1) 100%
-    );
-    border-radius: 10px;
-
-    .banner-button {
-    }
+.logo-image {
+    width: 10vw;
 }
 
 .center-content {
@@ -34,27 +26,215 @@
             rgba(165, 83, 237, 1) 100%
         );
         width: 15vw;
-        height: 30vh;
+        height: fit-content;
+        color: white;
+        font-size: 0.7vw;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 370px) and (max-width: 763px) {
+    .banner-top {
+        a {
+            font-size: 0.5rem;
+        }
+    }
+
+    .center-content {
+        display: flex;
+        flex-direction: column;
+
+        width: 90vw;
+        .left-text {
+            width: 100%;
+            text-align: center;
+            font-size: 0.5rem;
+        }
+
+        .center-content-right {
+            width: 100%;
+        }
+
+        .service-card {
+            background: #2a5b9b;
+            background: linear-gradient(
+                90deg,
+                rgba(42, 91, 155, 1) 0%,
+                rgba(87, 122, 199, 1) 75%,
+                rgba(110, 117, 211, 1) 83%,
+                rgba(165, 83, 237, 1) 100%
+            );
+            width: 100%;
+            height: fit-content;
+            min-height: 17vh;
+            color: white;
+            font-size: 0.8rem;
+        }
+        img {
+            width: 10vw;
+        }
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .center-content {
+        display: flex;
+        justify-content: space-around;
+        width: 90vw;
+        .left-text {
+            width: 40vw;
+            font-size: 0.8rem;
+        }
+
+        .center-content-right {
+            width: fit-content;
+        }
+
+        .service-card {
+            background: #2a5b9b;
+            background: linear-gradient(
+                90deg,
+                rgba(42, 91, 155, 1) 0%,
+                rgba(87, 122, 199, 1) 75%,
+                rgba(110, 117, 211, 1) 83%,
+                rgba(165, 83, 237, 1) 100%
+            );
+            width: 20vw;
+            height: fit-content;
+            min-height: 20vh;
+            color: white;
+            font-size: 0.8rem;
+
+            img {
+                width: 10vw;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 578px) and (max-width: 764px) and (orientation: portrait) {
+    body {
+    }
+    .service-card {
+        width: 50vw;
+        height: fit-content;
         color: white;
         font-size: 1.5vw;
     }
-    /* Small devices (landscape phones, 576px and up) */
-    @media (max-width: 576px) {
-    }
+}
 
-    /* Medium devices (tablets, 768px and up) */
-    @media (min-width: 768px) {
-    }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .center-content {
+        display: flex;
+        justify-content: space-around;
+        width: 90vw;
+        .left-text {
+            width: 40vw;
+            font-size: 0.8rem;
+        }
 
-    /* Large devices (desktops, 992px and up) */
-    @media (min-width: 992px) {
-    }
+        .center-content-right {
+            width: fit-content;
+        }
 
-    /* X-Large devices (large desktops, 1200px and up) */
-    @media (min-width: 1200px) {
-    }
+        .service-card {
+            background: #2a5b9b;
+            background: linear-gradient(
+                90deg,
+                rgba(42, 91, 155, 1) 0%,
+                rgba(87, 122, 199, 1) 75%,
+                rgba(110, 117, 211, 1) 83%,
+                rgba(165, 83, 237, 1) 100%
+            );
+            width: 20vw;
+            height: fit-content;
+            min-height: 20vh;
+            color: white;
+            font-size: 0.8rem;
 
-    /* XX-Large devices (larger desktops, 1400px and up) */
-    @media (min-width: 1400px) {
+            img {
+                width: 10vw;
+            }
+        }
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .banner-text {
+        font-size: 2rem;
+    }
+    .center-content {
+        display: flex;
+        justify-content: space-around;
+        width: 90vw;
+        .left-text {
+            width: 40vw;
+            font-size: 0.7rem;
+        }
+
+        .center-content-right {
+            width: fit-content;
+        }
+
+        .service-card {
+            background: #2a5b9b;
+            background: linear-gradient(
+                90deg,
+                rgba(42, 91, 155, 1) 0%,
+                rgba(87, 122, 199, 1) 75%,
+                rgba(110, 117, 211, 1) 83%,
+                rgba(165, 83, 237, 1) 100%
+            );
+            width: 20vw;
+            height: fit-content;
+            min-height: 20vh;
+            color: white;
+            font-size: 1rem;
+            border: none;
+
+            img {
+                width: 10vw;
+            }
+        }
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .center-content {
+        display: flex;
+        justify-content: space-around;
+        width: 90vw;
+        .left-text {
+            width: 40vw;
+            font-size: 1rem;
+        }
+
+        .center-content-right {
+            width: fit-content;
+        }
+
+        .service-card {
+            background: #2a5b9b;
+            background: linear-gradient(
+                90deg,
+                rgba(42, 91, 155, 1) 0%,
+                rgba(87, 122, 199, 1) 75%,
+                rgba(110, 117, 211, 1) 83%,
+                rgba(165, 83, 237, 1) 100%
+            );
+            width: 20vw;
+            height: fit-content;
+            min-height: 20vh;
+            color: white;
+            font-size: 1rem;
+            border: none;
+
+            img {
+                width: 5vw;
+            }
+        }
     }
 }

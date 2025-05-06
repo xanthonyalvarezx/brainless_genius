@@ -23,6 +23,9 @@ Route::post('/registerAdmin', [AuthController::class, 'registerAdmin']);
 
 /**ADMIN ROUTES */
 //GET
-Route::get('/dashboard', [PageController::class, 'adminDash'])->middleware('auth');
+Route::get('/dashboard/messages/{tab}', [PageController::class, 'adminDash'])->middleware('auth');
+Route::get('/dashboard/messages/{tab}', [PageController::class, 'adminDash'])->middleware('auth');
+Route::get('/dashboard/messages/{tab}', [PageController::class, 'adminDash'])->middleware('auth');
 // POST
+Route::put('/handle/message/submit/{message}', [DashboardController::class, 'checkboxSubmit']);
 Route::delete('/delete/message/{id}', [DashboardController::class, 'deleteMessage']);
