@@ -1,0 +1,126 @@
+html {
+    height: fit-content;
+}
+
+.main-container {
+    height: fit-content;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 360px) and (max-width: 763px) {
+    .main-container {
+        h1 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.6rem;
+        width: fit-content;
+        padding: 0.3rem;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+    .card-image {
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+    }
+    img {
+        width: 225px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .main-container {
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        width: fit-content;
+        padding: 0.7rem;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+    .card-image {
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+    }
+    img {
+        width: 225px;
+    }
+}
+
+@media only screen and (min-width: 578px) and (max-width: 764px) and (orientation: portrait) {
+    .main-container {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7rem;
+        width: fit-content;
+        padding: 0.7rem;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+    .card-image {
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+    }
+    img {
+        width: 200px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .card-inner-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem;
+        width: fit-content;
+        padding: 0.8rem;
+        margin-bottom: 1vh;
+        p {
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+    .card-image {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+    }
+    .card-text {
+        width: 50%;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

@@ -4,10 +4,15 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\DashboardController;
+use Illuminate\View\View;
+
 // PAGE ROUTES
 Route::get('/', [PageController::class, 'landing']);
 Route::get('/about', [PageController::class, 'about']);
 Route::get('/contact', [PageController::class, 'contact']);
+Route::fallback(function () {
+    return View('404');
+});
 
 //AUTHENTICATON ROUTES
 

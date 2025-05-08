@@ -15,7 +15,25 @@ html {
         rgba(110, 117, 211, 1) 83%,
         rgba(165, 83, 237, 1) 100%
     );
+    font-size: 1.5rem;
 }
+
+.banner-text {
+    font-size: 1.5em;
+}
+
+.logo-image {
+    width: 10vw;
+}
+
+.admin-login-link {
+    font-size: 0.4em;
+    text-decoration: none;
+    :hoveer {
+        text-decoration: underline;
+    }
+}
+
 button {
     border-radius: 8px;
     border: none;
@@ -39,4 +57,48 @@ button {
 
 .active {
     color: blueviolet;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 360px) and (max-width: 763px) {
+    .banner-top {
+        font-size: 0.5rem;
+    }
+
+    .logo-image {
+        width: 12vw;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .banner-top {
+        font-size: 1rem;
+    }
+
+    .logo-image {
+        width: 15vw;
+    }
+}
+
+@media only screen and (min-width: 578px) and (max-width: 764px) and (orientation: portrait) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .banner-top {
+        font-size: 1.2rem;
+    }
+
+    .logo-image {
+        width: 15vw;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }

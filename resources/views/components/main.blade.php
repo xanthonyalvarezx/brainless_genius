@@ -19,7 +19,7 @@
                 <div class="d-flex flex-column justify-content-center align-items-center w-25">
                     <span class=" banner-text text-white  text-center">Brainless Genius
                         <img class="logo-image" src="{{ asset('images/brainless_logo-removebg-preview (1).png') }}"
-                            alt="">
+                            alt="brainless genius web development logo">
                     </span>
                 </div>
                 {{-- nav starts --}}
@@ -37,6 +37,9 @@
                     </ul>
                 </nav>
                 {{-- nav stops --}}
+                <div class="admin-login-link">
+                    <a href="/login">Admin Login</a>
+                </div>
             </div>
         </div>
     </header>

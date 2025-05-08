@@ -16,6 +16,12 @@
 </head>
 
 <body>
+    <header>
+        <div class="text-end m-3">
+            <a class="btn btn-secondary" href="/logout">Logout</a>
+            <a class="btn btn-secondary" href="/register">Register New Admin</a>
+        </div>
+    </header>
     @if (session()->has('success'))
         <div class="container container--narrow">
             <div class="alert alert-success text-center">{{-- Success Alert from server --}}
