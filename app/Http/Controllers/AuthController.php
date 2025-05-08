@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Events\authLog;
 use Illuminate\Http\Request;
 use App\Jobs\sendRegisterEmail;
 use Illuminate\Validation\Rule;
@@ -21,9 +22,10 @@ class AuthController extends Controller
 
         if (auth()->attempt(['email' => $loginData['email'], 'password' => $loginData['password']])) {
             $request->session()->regenerate();
-            // event(new exampleEvent(['username' => auth()->user()->username, 'action' => 'login']));
+            event(new authLog(['name' => auth()->user()->name, 'action' => 'login']));
             return redirect('/dashboard/messages/new')->with('success', auth()->user()->name . " you've successfully logged in");
         } else {
+            event(new authLog(['name' => '', 'email' => $loginData['email'], 'action' => 'failed login']));
             return redirect('/login')->with('error', 'Invalid credentials');
         }
     }
@@ -42,6 +44,7 @@ class AuthController extends Controller
 
     public function logout()
     {
+        event(new authLog(['name' => auth()->user()->name, 'action' => 'logout']));
         auth()->logout();
         return redirect('/login')->with('success', 'You are now logged out');
     }

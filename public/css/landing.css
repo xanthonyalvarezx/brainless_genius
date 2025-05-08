@@ -3,13 +3,17 @@ html {
 }
 
 .main-container {
-    height: 100vh;
+    height: fit-content;
+    h5 {
+        font-size: 1.5em;
+    }
 }
 
-.logo-image {
-    width: 10vw;
+.card-icon {
+    margin-top: 1rem;
+    width: 5vw;
+    height: 5vw;
 }
-
 .center-content {
     .left-text {
         width: 25vw;
@@ -25,6 +29,9 @@ html {
             rgba(110, 117, 211, 1) 83%,
             rgba(165, 83, 237, 1) 100%
         );
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 15vw;
         height: fit-content;
         color: white;
@@ -33,12 +40,6 @@ html {
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 370px) and (max-width: 763px) {
-    .banner-top {
-        a {
-            font-size: 0.5rem;
-        }
-    }
-
     .center-content {
         display: flex;
         flex-direction: column;
@@ -63,14 +64,14 @@ html {
                 rgba(110, 117, 211, 1) 83%,
                 rgba(165, 83, 237, 1) 100%
             );
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             height: fit-content;
             min-height: 17vh;
             color: white;
             font-size: 0.8rem;
-        }
-        img {
-            width: 10vw;
         }
     }
 }
@@ -99,6 +100,9 @@ html {
                 rgba(110, 117, 211, 1) 83%,
                 rgba(165, 83, 237, 1) 100%
             );
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 20vw;
             height: fit-content;
             min-height: 20vh;
@@ -113,8 +117,6 @@ html {
 }
 
 @media only screen and (min-width: 578px) and (max-width: 764px) and (orientation: portrait) {
-    body {
-    }
     .service-card {
         width: 50vw;
         height: fit-content;
@@ -147,6 +149,9 @@ html {
                 rgba(110, 117, 211, 1) 83%,
                 rgba(165, 83, 237, 1) 100%
             );
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 20vw;
             height: fit-content;
             min-height: 20vh;
@@ -162,9 +167,6 @@ html {
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .banner-text {
-        font-size: 2rem;
-    }
     .center-content {
         display: flex;
         justify-content: space-around;
@@ -187,9 +189,12 @@ html {
                 rgba(110, 117, 211, 1) 83%,
                 rgba(165, 83, 237, 1) 100%
             );
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 20vw;
             height: fit-content;
-            min-height: 20vh;
+            min-height: 28vh;
             color: white;
             font-size: 1rem;
             border: none;
@@ -225,9 +230,12 @@ html {
                 rgba(110, 117, 211, 1) 83%,
                 rgba(165, 83, 237, 1) 100%
             );
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 20vw;
             height: fit-content;
-            min-height: 20vh;
+            min-height: 28vh;
             color: white;
             font-size: 1rem;
             border: none;

@@ -1,0 +1,42 @@
+body {
+    background: #2a5b9b;
+    background: linear-gradient(
+        90deg,
+        rgba(42, 91, 155, 1) 0%,
+        rgba(87, 122, 199, 1) 75%,
+        rgba(110, 117, 211, 1) 83%,
+        rgba(165, 83, 237, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #a156eb;
+    }
+    .main-text {
+        text-align: center;
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.main-image {
+    width: 25vw;
+}
